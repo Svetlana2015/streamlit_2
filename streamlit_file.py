@@ -107,8 +107,8 @@ def user_input_features():
     FLAG_DOCUMENT_3 = st.selectbox('Le client a-t-il fourni le document 3(1=OUI, 0=NON)', [1,0])
     FLAG_DOCUMENT_2 = st.selectbox('Le client a-t-il fourni le document 2(1=OUI, 0=NON)', [1,0])
     
-    OBS_30_CNT_SOCIAL_CIRCLE = st.number_input("Combien d'observations de l'environnement social du client avec un défaut observable de 30 DPD (jours de retard)", 0,360)
-    OBS_60_CNT_SOCIAL_CIRCLE = st.number_input("Combien d'observations de l'environnement social du client avec un défaut observable de 60 DPD (jours de retard)",0,360)
+    OBS_30_CNT_SOCIAL_CIRCLE = st.selectbox("Combien d'observations de l'environnement social du client avec un défaut observable de 30 DPD (jours de retard)", [0,1,2,3,4,5])
+    OBS_60_CNT_SOCIAL_CIRCLE = st.selectbox("Combien d'observations de l'environnement social du client avec un défaut observable de 60 DPD (jours de retard)", [0,1,2,3,4,5])
 
     EXT_SOURCE_2 = st.number_input("Score normalisé à partir d'une source de données externe (2)", 0.0, 1.0)
     EXT_SOURCE_3 = st.number_input("Score normalisé à partir d'une source de données externe (3)", 0.0, 1.0)
